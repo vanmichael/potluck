@@ -27,6 +27,28 @@ gem 'foundation-rails'
 # Ember integration with rails
 gem 'ember-appkit-rails'
 
+group :production do
+  #Neccesary for Heroku Deployment
+  gem 'rails_12factor'
+  gem 'newrelic_rpm'
+end
+
+group :test do
+  gem 'shoulda'
+  gem 'launchy'
+  gem 'valid_attribute'
+  gem 'capybara'
+  gem 'email_spec'
+end
+
+group :development, :test do
+  gem 'rspec-rails'
+  gem 'factory_girl_rails'
+  gem 'pry-rails'
+  gem 'quiet_assets'
+  gem 'dotenv-rails'
+end
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
