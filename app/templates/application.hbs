@@ -1,0 +1,20 @@
+<nav class="top-bar" data-topbar>
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">Potluck</a></h1>
+    </li>
+    <li class="toggle-topbar menu-icon"><a href="#">Menu</a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li>{{#link-to 'about'}}About{{/link-to}}</li>
+    </ul>
+    <ul class="right">
+      <li class="active">{{link-to 'Items' 'items'}}</li>
+    </ul>
+  </section>
+</nav>
+
+{{outlet}}

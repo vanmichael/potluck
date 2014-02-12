@@ -1,0 +1,17 @@
+
+  <h1>Items</h1>
+
+
+  {{link-to 'New Item' 'items.new' class="button"}}
+
+
+  {{#each}}
+    <ul class="pricing-table">
+    <li class="title">{{name}}</li>
+    <li class="description">{{description}}</li>
+    <li class="bullet-item">Name of Person</li>
+    <li class="cta-button">{{link-to 'See Item' 'items.show' this}}</li>
+    </ul>
+  {{/each}}
+
+
